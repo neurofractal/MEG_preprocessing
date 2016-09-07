@@ -1,6 +1,6 @@
-Rob's Lair of Preprocessign Scripts
+#Rob's Lair of Preprocessing Scripts
 
-General Stages:
+##General Stages:
 
 1.  Maxfilter (tSSS with .9 correlation) + movement visualisation
 2.  Load data into Fieldtrip & apply filters
