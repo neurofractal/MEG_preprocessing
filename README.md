@@ -8,7 +8,7 @@ I generally run Maxfilter through the Matlab command line using the function max
 
 ##General Stages to Processing:
 
-This is run using the script 
+This is run using the script preprocessing_elektra_FT_MASTER.m . This IS NOT a function. I find it better to run preprcessing as script for more control. Using the script is expained in the document Preprocessing rs_script_runthrough.docx.
 
 1.  Maxfilter (tSSS with .9 correlation) + movement visualisation (see above)
 2.  Load data into Fieldtrip & apply filters
