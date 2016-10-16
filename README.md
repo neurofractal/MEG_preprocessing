@@ -2,7 +2,7 @@
 
 ##Maxfilter
 
-Maxfilter is a program Elekta primarily used to clean MEG data using spatio-temporal signal separation methods. It can also apply motion correction, transform to a default headspace & much more.
+Maxfilter is a licenced software from Elekta (Finland), primarily used to clean MEG data using spatio-temporal signal separation methods. It can also apply motion correction, transform to a default headspace & much more.
 
 I generally run Maxfilter through the Matlab command line using the function maxfilter_all.m . Currently this is set up to Maxfilter your data using tSSS with a .9 correlation. For head movement visualisation the above function requires check check_movecomp.m to be in your Matlab path
 
