@@ -8,6 +8,8 @@ I generally run Maxfilter through the Matlab command line using the function max
 
 ##General Stages to Processing:
 
+This is run using the script 
+
 1.  Maxfilter (tSSS with .9 correlation) + movement visualisation (see above)
 2.  Load data into Fieldtrip & apply filters
 3.  Epoch the data
