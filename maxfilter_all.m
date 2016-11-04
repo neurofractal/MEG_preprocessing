@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Function to Maxfilter all .fif files in a directory
 % Use as maxfilter_all('path_to_directory')
 % Make sure there are no Maxfiltered datasets in your directory.
@@ -6,7 +6,7 @@
 % correlation. Can be changed if necessary.
 % Head position is subsequently visualised using a script obtained from the
 % MRC MEG team at Cambridge.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 function maxfilter_all(directory)
 

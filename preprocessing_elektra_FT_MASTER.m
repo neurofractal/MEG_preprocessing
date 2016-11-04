@@ -1,18 +1,24 @@
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This is a Matlab script to analyse Elekta data in Fieldtrip
+% This is a Matlab script to perform SIMPLE preprocess Elekta data in 
+% Fieldtrip. Tutorial = 'Preprocessing rs_script_runthrough.docx'. This
+% script has been customised for the alien task data.
+%
+% For more complex datasets please see 
+% preprocessing_elektra_FT_perspective_taking_ASD.m
+%
 % This runs through the common preprocessing, visualisation
 % and artefact rejection steps. Any issues with this email me at 
 % seymourr@aston.ac.uk. 
 %
-% Output = variable called data_clean and data_clean_noICA
+% Output = variables called data_clean and data_clean_noICA
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Specfiy Subject ID & Condition
 subject = 'XXXX';
 condition = 'auditory'; % specific for my data - can easily change
 %% Prerequisites
-% Set your current directory
+% Set your current directory based on condition
 if strcmp(condition,'visual')
     cd(sprintf('D:\\ASD_Data\\%s\\visual\\',subject))
 end
