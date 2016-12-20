@@ -1,5 +1,7 @@
 #Rob's Lair of Preprocessing Scripts
 
+![alt tag](http://i.imgur.com/P9dF0Vp.png)
+
 ##Maxfilter
 
 Maxfilter is a licenced software from Elekta (Finland), primarily used to clean MEG data using spatio-temporal signal separation methods. It can also apply motion correction, transform to a default headspace & much more.
