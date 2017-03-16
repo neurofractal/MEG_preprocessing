@@ -13,18 +13,18 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Specfiy Subject ID & Condition
-subject = '0417';
+subject = 'IG';
 PS_run = '3';
 %% Prerequisites
 % Set your current directory
-cd(sprintf('D:\\ASD_Data\\%s\\PS\\trans',subject))
+cd(sprintf('D:\\pilot\\%s\\PS\\',subject))
 
 % Specify location of the datafile (change to trans in 2 & 3)
 if strcmp(PS_run,'1');
-    rawfile = sprintf('D:\\ASD_Data\\raw_PS_data\\rs_asd_%s_pers%s_quat_tsss.fif',num2str(subject),PS_run);
+    rawfile = sprintf('D:\\pilot\\raw_PS_data\\rs_asd_%s_pers%s_quat_tsss.fif',num2str(subject),PS_run);
 
 else
-    rawfile = sprintf('D:\\ASD_Data\\raw_PS_data\\rs_asd_%s_pers%s_trans_tsss.fif',num2str(subject),PS_run);
+    rawfile = sprintf('D:\\pilot\\raw_PS_data\\rs_asd_%s_pers%s_trans_tsss.fif',num2str(subject),PS_run);
 end
 
 % Perform ft_qualitycheck
@@ -39,7 +39,6 @@ diary(sprintf('log_run%s_preICA.out',PS_run));
 t = [datetime('now')];
 disp(sprintf('Preprocessing the Perspective Taking Data for Subject %s Run Number %s',subject,PS_run))
 disp(t);
-
 %% Epoching & Filtering
 % Epoch the whole dataset into one continous dataset and apply
 % the appropriate filters

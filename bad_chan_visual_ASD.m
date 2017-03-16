@@ -1,8 +1,0 @@
-chan_list_0401 = {'MEG','-MEG0322', '-MEG2542','-MEG1213', '-MEG1232', '-MEG1433'};
-chan_list_0402 = {'MEG','-MEG0322', '-MEG2542','-MEG0121','-MEG2333', '-MEG2513'};
-chan_list_0403 = {'MEG','-MEG0322', '-MEG2542','-MEG1411', '-MEG1421', '-MEG1431', '-MEG1441'};
-chan_list_0404 = {'MEG','-MEG0322', '-MEG2542','-MEG2531', '-MEG1222', '-MEG1413'};
-chan_list_0405 = {'MEG','-MEG0322', '-MEG2542','-MEG0111', '-MEG0121', '-MEG1411', '-MEG1421','-MEG0122', 'MEG1412'};
-chan_list_0406 = {'MEG','-MEG0322', '-MEG2542','-MEG1411', '-MEG1223'};
-chan_list_0407 = {'MEG','-MEG0322', '-MEG2542'};
-chan_list_1401 = {'MEG','-MEG0322', '-MEG2542','-MEG0111', '-MEG0121', '-MEG1411','-MEG0313', '-MEG0343'};

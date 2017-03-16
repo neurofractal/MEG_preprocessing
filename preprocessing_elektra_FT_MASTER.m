@@ -15,7 +15,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Specfiy Subject ID & Condition
-subject = 'XXXX';
+subject = '1405';
 condition = 'auditory'; % specific for my data - can easily change
 %% Prerequisites
 % Set your current directory based on condition
@@ -27,7 +27,7 @@ if strcmp(condition,'auditory')
 end
 
 % Specify location of the datafile
-rawfile = sprintf('D:\\ASD_Data\\raw_alien_data\\\\rs_asd_%s_aliens_quat_tsss.fif',lower(subject))
+rawfile = sprintf('D:\\ASD_Data\\raw_alien_data\\rs_asd_%s_aliens_quat_tsss.fif',lower(subject))
 % Creates log file
 diary(sprintf('log %s.out',subject));
 c = datestr(clock); %time and date
@@ -37,12 +37,13 @@ disp(c)
 % Epoch the whole dataset into one continous dataset and apply
 % the appropriate filters
 cfg = [];
+%cfg.coilaccuracy = 2;
 cfg.headerfile = rawfile; 
 cfg.datafile = rawfile;
 cfg.channel = 'MEG';
 cfg.trialdef.triallength = Inf;
 cfg.trialdef.ntrials = 1;
-cfg = ft_definetrial(cfg)
+cfg = ft_definetrial(cfg);
 
 cfg.continuous = 'yes';
 cfg.bpfilter = 'yes';
@@ -87,7 +88,7 @@ data = ft_redefinetrial(cfg,alldata); %redefines the filtered data
 cfg = [];
 cfg.demean = 'yes';
 cfg.detrend = 'yes';
-data = ft_preprocessing(cfg,data)
+data = ft_preprocessing(cfg,data);
 
 %% Reject Trials
 % Display visual trial summary to reject deviant trials.
